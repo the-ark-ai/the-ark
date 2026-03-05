@@ -1,0 +1,33 @@
+name: API Health Check
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check API Health
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://thenode.it.com/health)
+          if [ "$response" != "200" ]; then
+            echo "❌ API returned $response"
+            exit 1
+          fi
+          echo "✅ API is healthy (HTTP $response)"
+
+      - name: Check SSL Certificate
+        run: |
+          expiry=$(echo | openssl s_client -connect arknode.ai:443 -servername arknode.ai 2>/dev/null | openssl x509 -noout -enddate 2>/dev/null | cut -d= -f2)
+          echo "SSL certificate expires: $expiry"
+
+      - name: Check Machine Discovery
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://thenode.it.com/.well-known/ai-agent.json)
+          if [ "$response" != "200" ]; then
+            echo "❌ Machine discovery returned $response"
+            exit 1
+          fi
+          echo "✅ Machine discovery endpoint healthy (HTTP $response)"

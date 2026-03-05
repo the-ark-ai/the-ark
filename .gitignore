@@ -78,3 +78,5 @@ dist/
 build/
 *.pyc
 __pycache__/
+research/
+bitcoin-agent.skill
