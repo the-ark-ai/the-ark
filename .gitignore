@@ -32,6 +32,13 @@ skills/bitcoin-agent/scripts/config.yaml
 skills/bitcoin-agent/references/deployment.md
 reports/bitcoin-lightning-ai-agent.md
 
+# Applications & pitch decks (NEVER push)
+baobab-application/
+assets/baobab*
+assets/the-ark-pitch*
+*-application/
+*-application.*
+
 # Internal / Strategic (NEVER push)
 .openclaw/
 AGENTS.md
