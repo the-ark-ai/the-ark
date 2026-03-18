@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 2000" width="850" height="2000">
+  <defs>
+    <linearGradient id="green-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a34a"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="lightning" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#DC2626"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DC2626"/>
+      <stop offset="25%" style="stop-color:#F59E0B"/>
+      <stop offset="50%" style="stop-color:#16a34a"/>
+      <stop offset="75%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="ark-body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6d28d9"/>
+      <stop offset="100%" style="stop-color:#4338ca"/>
+    </linearGradient>
+    <linearGradient id="ark-hull" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4338ca"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="water1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="2000" fill="#fafafa"/>
+
+  <!-- Subtle top accent -->
+  <rect x="0" y="0" width="850" height="6" fill="url(#ring)"/>
+
+  <!-- ============== TOP SECTION: LOGO ============== -->
+  <g transform="translate(425, 280) scale(0.65)">
+    <circle cx="0" cy="0" r="256" fill="#0f0a2a"/>
+    <circle cx="0" cy="0" r="245" fill="none" stroke="url(#ring)" stroke-width="3" opacity="0.8"/>
+    <!-- Lightning glow -->
+    <polygon points="0,-176 -24,-71 8,-78 -16,14 44,-91 12,-84 32,-166" fill="#FFD700" opacity="0.1"/>
+    <!-- Ark hull -->
+    <path d="M -141 69 Q -116 134 0 134 Q 116 134 141 69 L 119 69 Q 104 114 0 114 Q -104 114 -119 69 Z" fill="url(#ark-hull)" stroke="#B388FF" stroke-width="1"/>
+    <!-- Ark body -->
+    <path d="M -101 69 L -84 -1 L 84 -1 L 101 69 Z" fill="url(#ark-body)" stroke="#B388FF" stroke-width="0.8"/>
+    <!-- Deck line -->
+    <line x1="-89" y1="34" x2="89" y2="34" stroke="#E040FB" stroke-width="0.8" opacity="0.6"/>
+    <!-- Windows -->
+    <circle cx="-46" cy="19" r="6" fill="#18FFFF" opacity="0.8"/>
+    <circle cx="0" cy="19" r="6" fill="#FFE44D" opacity="0.8"/>
+    <circle cx="46" cy="19" r="6" fill="#FF6B6B" opacity="0.8"/>
+    <!-- Lightning bolt -->
+    <polygon points="0,-176 -24,-71 8,-78 -16,14 44,-91 12,-84 32,-166" fill="url(#lightning)"/>
+    <!-- Water -->
+    <path d="M -186 122 Q -146 104 -101 122 Q -56 140 -11 122 Q 34 104 79 122 Q 124 140 169 122 Q 204 109 224 122" fill="none" stroke="url(#water1)" stroke-width="3"/>
+    <!-- THE ARK text -->
+    <text x="0" y="192" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="38" fill="url(#ring)" letter-spacing="10">THE ARK</text>
+    <text x="0" y="217" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="13" fill="#18FFFF" letter-spacing="5" opacity="0.8">AI × LIGHTNING</text>
+  </g>
+
+  <!-- ============== BRAND NAME ============== -->
+  <text x="425" y="540" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="72" fill="#1a1a2e" letter-spacing="-1">The Ark <tspan fill="url(#green-cyan)">AI</tspan></text>
+
+  <!-- Divider -->
+  <rect x="325" y="570" width="200" height="2" rx="1" fill="url(#accent-line)"/>
+
+  <!-- ============== MAIN SLOGAN ============== -->
+  <text x="425" y="670" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="52" fill="#1e293b" letter-spacing="-0.5">
+    <tspan x="425" dy="0">AI for Where</tspan>
+    <tspan x="425" dy="68">It Matters Most.</tspan>
+  </text>
+
+  <!-- ============== SECONDARY LINE ============== -->
+  <text x="425" y="850" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="28" fill="#64748b" letter-spacing="1">
+    No signup. No subscription.
+  </text>
+  <text x="425" y="895" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="30" fill="#d97706" letter-spacing="1">
+    Pay with Lightning ⚡
+  </text>
+
+  <!-- Divider -->
+  <rect x="250" y="950" width="350" height="1" rx="0.5" fill="url(#accent-line)"/>
+
+  <!-- ============== FEATURES SECTION ============== -->
+  
+  <!-- Feature 1 -->
+  <g transform="translate(130, 1030)">
+    <circle cx="0" cy="0" r="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="0" y="7" text-anchor="middle" font-size="22">🧠</text>
+    <text x="50" y="-6" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="24" fill="#1e293b">120+ AI Services</text>
+    <text x="50" y="22" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="17" fill="#64748b">Research, code, translate, create</text>
+  </g>
+
+  <!-- Feature 2 -->
+  <g transform="translate(130, 1120)">
+    <circle cx="0" cy="0" r="24" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="0" y="7" text-anchor="middle" font-size="22">⚡</text>
+    <text x="50" y="-6" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="24" fill="#1e293b">Bitcoin Lightning</text>
+    <text x="50" y="22" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="17" fill="#64748b">Instant payments from 50 sats</text>
+  </g>
+
+  <!-- Feature 3 -->
+  <g transform="translate(130, 1210)">
+    <circle cx="0" cy="0" r="24" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="0" y="7" text-anchor="middle" font-size="22">🔒</text>
+    <text x="50" y="-6" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="24" fill="#1e293b">Zero Data Collection</text>
+    <text x="50" y="22" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="17" fill="#64748b">No accounts, no tracking, no emails</text>
+  </g>
+
+  <!-- Feature 4 -->
+  <g transform="translate(130, 1300)">
+    <circle cx="0" cy="0" r="24" fill="#fefce8" stroke="#d97706" stroke-width="2"/>
+    <text x="0" y="7" text-anchor="middle" font-size="22">🌍</text>
+    <text x="50" y="-6" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="24" fill="#1e293b">Built for Africa</text>
+    <text x="50" y="22" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="17" fill="#64748b">Accessible AI for the next billion</text>
+  </g>
+
+  <!-- Divider -->
+  <rect x="250" y="1400" width="350" height="1" rx="0.5" fill="url(#accent-line)"/>
+
+  <!-- ============== QR CODE PLACEHOLDER ============== -->
+  <image x="325" y="1450" width="200" height="200" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApQAAAKUCAIAAAA1rT9rAAAOL0lEQVR4nO3Xy5GrShZA0a4OWYA72KYRtuGOXOAN2oCuUtbTufuy1pzIQ/LZkV/Xdf0HAOj47/QAAMDPiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMQ8phZ+7q+ppfmm49ymR8hYeZ9X9nlq3RVT335xn/0n/3xT35GTNwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEPKYHeMdxbtMjZDz31/QIPzY188p7tXLt3Z7R1Pdb3OcV/pPfV3w3nLwBIEa8ASBGvAEgRrwBIEa8ASBGvAEgRrwBIEa8ASBGvAEgRrwBIEa8ASBGvAEgRrwBIEa8ASBGvAEgRrwBIEa8ASBGvAEgRrwBIOYxPcCnPffX9Ag/dpzb9Agfdbf7XbGyV8VvYWXmu+3ViuL93u2/4eQNADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADGP6QHg7o5ze/va5/76xUk+Y2Xmqb1aWRf+DU7eABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABDzmB6Av9Nzf02P8GPHuU2P8GMrM688o6l1gf9x8gaAGPEGgBjxBoAY8QaAGPEGgBjxBoAY8QaAGPEGgBjxBoAY8QaAGPEGgBjxBoAY8QaAGPEGgBjxBoAY8QaAGPEGgBjxBoAY8QaAmMf0AJ92nNv0CLewss/P/fWLk3xm3eJ7NTVzca/uxjP68zl5A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0DMY3qAdzz31/QI/B8rz+g4N+ta17qL/Cf/bk7eABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABDzdV3X9Az8hZ776+1rj3P7xUn+fCt7xZ/vbu8zn+HkDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAxj+kBPu25v0bWPc5tZN2p+52ycr8rz+hu71XR1DMqvhtT3xHf5+QNADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADFf13WNLPzcX29fe5zbL07y5yvu1crMRcV9Xpl56vkWv33f7/cV73dqZidvAIgRbwCIEW8AiBFvAIgRbwCIEW8AiBFvAIgRbwCIEW8AiBFvAIgRbwCIEW8AiBFvAIgRbwCIEW8AiBFvAIgRbwCIEW8AiBFvAIj5uq5reoYfe+6vkXWPc3v72pWZp9adsnK/8DeZ+m9MKf7bpzh5A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0CMeANAjHgDQIx4A0DM13Vd0zP82HN/TY/wY8e5TY/wY3fb55X7te5n1p1S/H5XTL0bU4r36+QNADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADHiDQAx4g0AMeINADGPqYWf+2tq6ZypvTrObWTdlfud2qu7rTul+E6uWLnflZnvts9FTt4AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AEPOYHqDkOLe3r33ur1+c5PtWZp4ytc/FdVeszHy3+y3OPKX4ryvus5M3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMSINwDEiDcAxIg3AMQ8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" style="image-rendering:pixelated" />
+
+  <text x="425" y="1700" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="26" fill="#0891b2" letter-spacing="1">arknode.ai</text>
+
+  <!-- ============== BOTTOM SECTION ============== -->
+  <rect x="0" y="1850" width="850" height="150" fill="#0f0a2a"/>
+  <rect x="0" y="1848" width="850" height="3" fill="url(#ring)"/>
+  
+  <text x="425" y="1910" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="300" font-size="18" fill="#94a3b8" letter-spacing="3">POWERED BY</text>
+  <text x="425" y="1950" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="24" fill="#FFE44D" letter-spacing="2">BITCOIN LIGHTNING NETWORK ⚡</text>
+</svg>

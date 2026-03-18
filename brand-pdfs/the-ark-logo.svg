@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="lightning" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE44D;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF6B00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF2D2D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ark-hull" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6C63FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3F51B5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A237E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ark-body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C4DFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#304FFE;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="water1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00E5FF;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#18FFFF;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#00B0FF;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="water2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00BFA5;stop-opacity:0.7" />
+      <stop offset="50%" style="stop-color:#64FFDA;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#00BFA5;stop-opacity:0.7" />
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D0221;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#150734;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A0A2E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#FFD93D;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6BCB77;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#4D96FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9B59B6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow-gold">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#FFD700" flood-opacity="0.5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-cyan">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#00E5FF" flood-opacity="0.4"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-purple">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="spark">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
+  
+  <!-- Outer rainbow ring -->
+  <circle cx="256" cy="256" r="245" fill="none" stroke="url(#ring)" stroke-width="2.5" opacity="0.7"/>
+  <circle cx="256" cy="256" r="238" fill="none" stroke="url(#ring)" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Stars/particles -->
+  <circle cx="100" cy="120" r="1.5" fill="#FFE44D" opacity="0.8"/>
+  <circle cx="400" cy="100" r="1" fill="#FF6B6B" opacity="0.6"/>
+  <circle cx="80" cy="200" r="1" fill="#00E5FF" opacity="0.7"/>
+  <circle cx="430" cy="180" r="1.5" fill="#64FFDA" opacity="0.5"/>
+  <circle cx="150" cy="80" r="0.8" fill="#9B59B6" opacity="0.6"/>
+  <circle cx="370" cy="130" r="1.2" fill="#FFD93D" opacity="0.7"/>
+  <circle cx="120" cy="170" r="0.8" fill="#6BCB77" opacity="0.5"/>
+  <circle cx="410" cy="220" r="1" fill="#FF6B6B" opacity="0.4"/>
+  
+  <!-- Lightning bolt glow (behind) -->
+  <polygon points="256,80 232,185 264,178 240,270 300,165 268,172 288,90" fill="#FFD700" opacity="0.15" filter="url(#glow-purple)"/>
+  
+  <!-- Ark hull -->
+  <path d="M 115 325 Q 140 390 256 390 Q 372 390 397 325 L 375 325 Q 360 370 256 370 Q 152 370 137 325 Z" fill="url(#ark-hull)" stroke="#B388FF" stroke-width="1"/>
+  
+  <!-- Ark body -->
+  <path d="M 155 325 L 172 255 L 340 255 L 357 325 Z" fill="url(#ark-body)" stroke="#B388FF" stroke-width="0.8"/>
+  
+  <!-- Deck details -->
+  <line x1="167" y1="290" x2="345" y2="290" stroke="#E040FB" stroke-width="0.8" opacity="0.6"/>
+  <line x1="162" y1="308" x2="350" y2="308" stroke="#7C4DFF" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Windows -->
+  <circle cx="210" cy="275" r="6" fill="#18FFFF" opacity="0.7"/>
+  <circle cx="256" cy="275" r="6" fill="#FFE44D" opacity="0.7"/>
+  <circle cx="302" cy="275" r="6" fill="#FF6B6B" opacity="0.7"/>
+  
+  <!-- Porthole glow -->
+  <circle cx="210" cy="275" r="6" fill="#18FFFF" opacity="0.2" filter="url(#spark)"/>
+  <circle cx="256" cy="275" r="6" fill="#FFE44D" opacity="0.2" filter="url(#spark)"/>
+  <circle cx="302" cy="275" r="6" fill="#FF6B6B" opacity="0.2" filter="url(#spark)"/>
+  
+  <!-- Lightning bolt mast -->
+  <polygon points="
+    256,80 
+    232,185 
+    264,178 
+    240,270 
+    300,165 
+    268,172 
+    288,90
+  " fill="url(#lightning)" filter="url(#glow-gold)"/>
+  
+  <!-- Lightning sparks -->
+  <circle cx="242" cy="272" r="4" fill="#FFE44D" opacity="0.8" filter="url(#spark)"/>
+  <circle cx="255" cy="278" r="3" fill="#FF6B00" opacity="0.6" filter="url(#spark)"/>
+  <circle cx="236" cy="280" r="2" fill="#FF2D2D" opacity="0.5" filter="url(#spark)"/>
+  <line x1="240" y1="270" x2="225" y2="285" stroke="#FFE44D" stroke-width="1.5" opacity="0.5"/>
+  <line x1="240" y1="270" x2="255" y2="290" stroke="#FF6B00" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Water waves -->
+  <path d="M 70 378 Q 110 360 155 378 Q 200 396 245 378 Q 290 360 335 378 Q 380 396 425 378 Q 460 365 480 378" fill="none" stroke="url(#water1)" stroke-width="3" filter="url(#glow-cyan)"/>
+  <path d="M 60 395 Q 105 380 150 395 Q 195 410 240 395 Q 285 380 330 395 Q 375 410 420 395 Q 455 383 475 395" fill="none" stroke="url(#water2)" stroke-width="2.5" opacity="0.7"/>
+  <path d="M 80 410 Q 120 400 165 410 Q 210 420 255 410 Q 300 400 345 410 Q 390 420 435 410 Q 460 403 470 410" fill="none" stroke="#00BFA5" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- THE ARK text -->
+  <text x="256" y="448" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="38" fill="url(#ring)" letter-spacing="10">THE ARK</text>
+  
+  <!-- Tagline -->
+  <text x="256" y="473" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="13" fill="#18FFFF" letter-spacing="5" opacity="0.8">AI × LIGHTNING</text>
+</svg>
