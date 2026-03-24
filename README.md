@@ -4,8 +4,9 @@
 [![Services](https://img.shields.io/badge/Services-120+-blue)](https://arknode.ai)
 [![Protocol](https://img.shields.io/badge/Protocol-L402-orange)](https://thenode.it.com/.well-known/ai-agent.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![File Converter](https://img.shields.io/badge/File_Converter-171+_formats-purple)](https://arknode.ai/convert/)
 
-**120+ AI services. Pay per task. No subscriptions. No banks. No borders.**
+**120+ AI services. 171+ file conversions. Pay per task. No subscriptions. No banks. No borders.**
 
 The Ark AI is an autonomous pay-per-task AI platform built on Bitcoin's Lightning Network. Access professional AI tools — code review, legal documents, translations, SEO analysis, voice generation, image creation, and more — for as little as 10 sats.
 
@@ -47,6 +48,27 @@ No sign-up. No KYC. No data stored. Just AI, powered by sats.
 | **Productivity** | Meeting notes, presentations, reports, spreadsheet formulas | 20–100 sats |
 | **Real Estate** | Property analysis, listing writing, lease review | 200–500 sats |
 | **Consulting** | Business plans, SWOT analysis, market research, proposals | 200–500 sats |
+
+## 🔄 File Converter
+
+Universal file conversion — 171+ conversion types across 5 categories. No sign-up, no limits.
+
+**Live:** [arknode.ai/convert](https://arknode.ai/convert/)
+
+| Category | Formats | Powered By |
+|----------|---------|------------|
+| **Documents** | PDF ↔ DOCX, TXT → PDF, HTML → PDF, EPUB → PDF | LibreOffice + pdf2docx |
+| **Images** | PNG ↔ JPG, WEBP → PNG, SVG → PNG, HEIC → JPG | ImageMagick |
+| **Audio** | MP3 ↔ WAV, FLAC → MP3, M4A → MP3, OGG → AAC | FFmpeg |
+| **Video** | MP4 ↔ AVI, MOV → MP4, MKV → WEBM, GIF → MP4 | FFmpeg |
+| **Spreadsheets** | CSV ↔ XLSX, ODS → XLSX, XLS → CSV | LibreOffice |
+
+```bash
+# API usage
+curl -X POST https://arknode.ai/convert/api/convert \
+  -F "file=@document.docx" \
+  -F "target=pdf"
+```
 
 **Full service list:** [arknode.ai](https://arknode.ai) · [API Spec](https://thenode.it.com/openapi.json)
 
@@ -163,6 +185,8 @@ curl -X POST https://thenode.it.com/l402/task \
 | **Machine Discovery** | [thenode.it.com/.well-known/ai-agent.json](https://thenode.it.com/.well-known/ai-agent.json) |
 | **Developer Tools** | [thenode.it.com/devtools](https://thenode.it.com/devtools) |
 | **Service Marketplace** | [thenode.it.com/market](https://thenode.it.com/market) |
+| **File Converter** | [arknode.ai/convert](https://arknode.ai/convert/) |
+| **Converter API** | [arknode.ai/convert/api/formats](https://arknode.ai/convert/api/formats) |
 
 ## 🤝 Contributing
 
