@@ -1,17 +1,11 @@
 # OpenClaw Configuration - The Ark
-# Fallback chain: Claude Opus → Claude Sonnet → Gemini Pro → Local Gemma
+# Primary: Anthropic Claude (API key auth)
+# Fallback chain: Claude Opus → Sonnet → Gemini Pro → Local Gemma
 #
 # STATUS:
-# - Anthropic API key: ✅ Active (not affected by subscription ban)
-# - Google Gemini: ⏳ Ready - needs API key to activate
+# - Anthropic API key: ✅ Active
+# - Google Gemini 2.5 Pro: ✅ Active (API key configured)
 # - Ollama/Gemma3: ✅ Local fallback always available
-#
-# To activate Gemini fallback:
-#   1. Go to https://aistudio.google.com/apikey
-#   2. Create a free API key
-#   3. Run: export GEMINI_API_KEY="your-key-here"
-#   4. Add to ~/.zshrc for persistence
-#   5. Restart OpenClaw gateway: openclaw gateway restart
 
 agents:
   defaults:
