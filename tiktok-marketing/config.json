@@ -1,0 +1,49 @@
+{
+  "app": {
+    "name": "The Ark AI",
+    "description": "Pay-per-task AI assistant powered by Bitcoin Lightning. 120+ AI tools including research, writing, code generation, translation, image creation, data analysis, and more. No subscriptions, no signups. Just results.",
+    "audience": "Young Kenyans and Africans (18-30), university students, freelancers, hustlers, cyber cafe users, tech-curious youth",
+    "problem": "AI tools like ChatGPT require subscriptions ($20/month) which is unaffordable for most African youth. The Ark lets you pay only for what you use, starting from KES 10 via M-Pesa.",
+    "differentiator": "No subscription, no signup, pay with M-Pesa or Bitcoin Lightning. 120+ specialized AI tools. African language support (Swahili, Amharic, Zulu, etc). Cheapest AI on the continent.",
+    "appUrl": "https://arknode.ai",
+    "category": "tech/productivity",
+    "isMobileApp": false,
+    "isPWA": true
+  },
+  "tiktok": {
+    "handle": "",
+    "accountStatus": "active",
+    "warmupComplete": true
+  },
+  "imageGen": {
+    "provider": "openclaw",
+    "model": "gpt-image-1",
+    "basePrompt": "Hyper-modern smartphone screen mockup showing an AI chat interface with futuristic neon accents. Young African person using phone, cool urban setting, vibrant colors, Gen-Z aesthetic. Shot on iPhone 15 Pro, natural lighting, portrait orientation.",
+    "style": "modern, cool, vibrant, Gen-Z aesthetic, afrofuturistic, neon accents on dark backgrounds"
+  },
+  "postiz": {
+    "apiKey": "",
+    "integrationIds": {
+      "tiktok": ""
+    }
+  },
+  "revenuecat": {
+    "enabled": false
+  },
+  "posting": {
+    "privacyLevel": "SELF_ONLY",
+    "schedule": ["09:00", "13:00", "18:00"],
+    "timezone": "Africa/Nairobi",
+    "crossPost": []
+  },
+  "content": {
+    "format": "slideshow",
+    "slidesPerPost": 6,
+    "hookCategories": ["shock_value", "relatable", "before_after", "listicle", "POV", "challenge"],
+    "targetVibes": ["futuristic", "cool", "accessible", "empowering", "hustle_culture"]
+  },
+  "referral": {
+    "code": "XhR6nI",
+    "link": "arknode.ai?ref=XhR6nI"
+  }
+}

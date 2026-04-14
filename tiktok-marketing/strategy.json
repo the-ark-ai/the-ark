@@ -1,0 +1,79 @@
+{
+  "phase": "launch",
+  "postsPerDay": 2,
+  "schedule": ["09:00", "18:00"],
+  "hookRotation": [
+    {
+      "category": "shock_value",
+      "hooks": [
+        "I asked AI to write my ENTIRE assignment in 30 seconds...",
+        "This FREE AI just replaced my KES 2,500/month ChatGPT subscription",
+        "My professor thought I spent 6 hours on this research paper... 💀",
+        "I made KES 5,000 in one day using this AI nobody talks about",
+        "POV: You discover AI that costs less than chapati 🫓"
+      ]
+    },
+    {
+      "category": "relatable",
+      "hooks": [
+        "When your deadline is in 2 hours and you haven't started...",
+        "Broke students discovering they can use AI for KES 10 >>",
+        "Things I wish I knew before paying for ChatGPT Plus 😭",
+        "That feeling when AI writes a better essay than you ever could",
+        "University students in 2026 are different breed fr fr 💀"
+      ]
+    },
+    {
+      "category": "before_after",
+      "hooks": [
+        "My grades BEFORE vs AFTER discovering this AI tool",
+        "How I went from C+ to A- using one website",
+        "My hustle before vs after I found this AI 📈",
+        "Research that took 3 days vs 3 minutes ⚡",
+        "Writing essays the old way vs with AI 🤯"
+      ]
+    },
+    {
+      "category": "listicle",
+      "hooks": [
+        "5 AI tools in one website that every student needs 🔥",
+        "3 ways to make money with AI in Kenya right now",
+        "The CHEAPEST way to use AI in Africa (not ChatGPT)",
+        "4 things this AI can do that ChatGPT can't",
+        "Why 90% of Kenyan students don't know about this AI"
+      ]
+    },
+    {
+      "category": "POV",
+      "hooks": [
+        "POV: You're a uni student who just discovered free AI",
+        "POV: Your friend asks how you finished the assignment so fast",
+        "POV: You're at a cyber and the AI costs less than printing",
+        "POV: ChatGPT says 'upgrade to Plus' but you found something better",
+        "POV: You're the only one in class who knows about this 🤫"
+      ]
+    }
+  ],
+  "slideStructure": {
+    "slide1": "Hook — stop the scroll, create curiosity",
+    "slide2": "The problem — relatable pain point",
+    "slide3": "Discovery — introduce The Ark AI",
+    "slide4": "Proof/Demo — show what it does",
+    "slide5": "Mind-blown reaction — the wow moment",
+    "slide6": "CTA — 'Link in bio' or 'arknode.ai' + free prompts mention"
+  },
+  "ctaVariations": [
+    "8 free prompts at arknode.ai ⚡",
+    "Try it free — no signup needed 🔗",
+    "Link in bio — thank me later 🙏",
+    "arknode.ai — cheaper than chapati fr 🫓",
+    "Stop paying $20/month. Link in bio ⚡"
+  ],
+  "contentPillars": [
+    "Student life / assignments / research",
+    "Hustle / making money with AI",
+    "Comparison with ChatGPT (we're cheaper)",
+    "African languages / Swahili AI",
+    "Demo / screen recordings of tasks"
+  ]
+}
